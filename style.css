@@ -99,6 +99,15 @@ div{
     background-repeat: no-repeat;
     position:relative;
   }
+  #bg2{
+    height: 300px;
+    background-image:url(images/a32bad2cd94394476a48787809d9ca3eaa3e33f3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+  }
+
   #bg1{
     height: 250px;
     background-image:url(images/fleet-white-commercial-vehicles-reflective-surface\ 1.png);
@@ -120,7 +129,7 @@ div{
     margin: 10px;line-height: 10px;
 }
 #card2 p{font-size: 17px;}
-  .bgcover{
+ .bgcover{
     position:absolute;
     top:0;
     left:0;
@@ -132,6 +141,29 @@ div{
     padding-top: 5%;text-align: left;
   }
   .bgcover>div>a{
+    color:#ffffff;
+    background-color: #13182F;
+    padding: 4px;
+    border-radius: 3px;
+    z-index: 1;
+    border: none;
+    font-weight: 400;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+  }
+  .bgcover2{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+   background-color:#00000099;
+    color:#ffffff;
+    padding: 40px;
+    padding-top: 5%;text-align: left;
+  }
+  .bgcover2>div>a{
     color:#ffffff;
     background-color: #13182F;
     padding: 4px;
@@ -204,6 +236,8 @@ div{
 #talk2 img{
     border-radius: 15px;
 }
+
+
 button{
     background-color: #13182F;padding: 10px;border: 1px solid black;border-radius: 5px;color: #fff;
     border: none; font-size: 16px;
@@ -266,6 +300,10 @@ footer h3{
     margin-bottom:25px;
     padding: 10px;
   }
+    #partners{
+        width: 100%;
+      }
+
   .divide{
     display: flex;
     flex-direction: row;
@@ -333,7 +371,7 @@ footer{
     }
     
     #bg{
-        height: 550px;
+        height: 420px;
       }
     .sidenav{
         display: block;
@@ -386,9 +424,12 @@ footer{
       .sidenav a:hover {
         color: #ffffff;background-color: #13182F;
       }
+      #partners{
+        width: 100%;height: 150px;
+      }
 
 .container{
-    float: right;margin-right: 30px;margin-top: -40px;
+    float: right;margin-right: 30px;margin-top: -50px;
 }
 #talk{
     flex-direction: column;justify-content: center;align-items: center;
