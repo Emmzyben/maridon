@@ -114,10 +114,10 @@ div{
     font-size: 19px;font-weight: 400;
   }
 #card2{
-    display: flex;flex-direction: row;align-items: center; margin-left: -30;
+    display: flex;flex-direction: row;align-items: center; margin-left: 0;margin-top: 15px;
 }
 #card2>div{
-    margin: 30px;line-height: 10px;
+    margin: 10px;line-height: 10px;
 }
 #card2 p{font-size: 17px;}
   .bgcover{
@@ -214,7 +214,7 @@ button{
 }
 #services1>div{
     width:30%;margin: 10px;text-align:left;text-decoration: none;
-    box-shadow: 0px 0px 22px 0px #00000029;background-color: #F8F7F7;
+    box-shadow: 0px 0px 22px 0px #00000029;background-color:rgba(128, 128, 128, 0.228);
 border-radius: 15px;height: auto;
 }
 #services1>div>div{
@@ -228,7 +228,7 @@ border-radius: 15px;height: auto;
   
 }
 #services2>div{
-    width:29%;margin: 10px;text-align:left;text-decoration: none;background-color: #F8F7F7;color: #242424;
+    width:29%;margin: 10px;text-align:left;text-decoration: none;background-color: rgba(128, 128, 128, 0.228);color: #242424;
 padding: 15px;height: 140px;border-radius: 15px;
 }
 #services2 img{
@@ -297,15 +297,19 @@ footer h3{
   font-weight: bold;
   }
 @media only screen and (max-width: 900px){
+  #card2 p{font-size: 15px;}
   #card2>div{
    line-height: 18px;
 }
-  p
+  
    .bgcover h1{
-    font-size: 20px;
+    font-size: 25px;
   }
   .bgcover p{
     font-size: 16px;font-weight: 400;
+  }
+  .bgcover{
+    padding-left:10px ;
   }
     .divide{
         flex-direction: column;margin: 20px;
@@ -387,12 +391,14 @@ footer{
     float: right;margin-right: 30px;margin-top: -40px;
 }
 #talk{
-    flex-direction: column;justify-content: center;
+    flex-direction: column;justify-content: center;align-items: center;
 }
 #talk >div{
     width: auto;padding: 0px;
 }
-
+#talk img{
+    width: 300px;
+}
 #talk2{
     flex-direction: column;justify-content: center;
 }
