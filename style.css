@@ -374,10 +374,10 @@ width: 100%;
 width: auto; height: auto;margin: 10px;
 }
 .img1{
-  width: 350px;height: 350px;
+  width: 300px;height: 350px;
 }
 .img2{
-  width: 350px;height: 350px;
+  width: 300px;height: 350px;
 }
 #innerId{
   flex-direction: column;
@@ -387,7 +387,7 @@ width: auto; height: auto;margin: 10px;
   width: auto;height: auto;
 }
  #innerId>div> img{
- width: 350px;height: 350px;
+ width: 300px;height: 350px;
  }
  #card2 p{font-size: 15px;}
   #card2>div{
@@ -425,7 +425,7 @@ footer{
     }
     
     #bg{
-        height: 360px;
+        height: 400px;
       }
     .sidenav{
         display: block;
