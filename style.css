@@ -100,7 +100,7 @@ div{
     position:relative;
   }
   #bg2{
-    height: 300px;
+    height: 400px;
     background-image:url(images/a32bad2cd94394476a48787809d9ca3eaa3e33f3.jpg);
     background-size: cover;
     background-position: center;
@@ -161,7 +161,7 @@ div{
    background-color:#00000099;
     color:#ffffff;
     padding: 40px;
-    padding-top: 5%;text-align: left;
+    padding-top: 15%;
   }
   .bgcover2>div>a{
     color:#ffffff;
@@ -334,8 +334,62 @@ footer h3{
     color: orangered; /* Customize the color if needed */
   font-weight: bold;
   }
+  #services2 i{
+    font-size: 30px;
+  }
+
+   #snap{
+    display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-items: center;
+  }
+#snap>div{
+width: 40%; height: 500px;margin: 10px;
+}
+.img1{
+  width: 100%;height: 500px;border-radius: 10px;
+}
+.img2{
+  width: 100%;height: 250px;border-radius: 10px;
+}
+#innerId{
+   display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-items: center;
+width: 100%;
+  }
+#innerId >div{
+  width: 47%;margin: 5px;
+}
+ #innerId img{
+  width: 100%;height: 250px; border-radius: 10px;
+ }
+ @media only screen and (max-width: 1200px){
+    #snap{
+  flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 900px){
-  #card2 p{font-size: 15px;}
+     #snap{
+ flex-direction: column;
+  }
+#snap>div{
+width: auto; height: auto;margin: 10px;
+}
+.img1{
+  width: 350px;height: 350px;
+}
+.img2{
+  width: 350px;height: 350px;
+}
+#innerId{
+  flex-direction: column;
+
+  }
+#innerId >div{
+  width: auto;height: auto;
+}
+ #innerId>div> img{
+ width: 350px;height: 350px;
+ }
+ #card2 p{font-size: 15px;}
   #card2>div{
    line-height: 18px;
 }
@@ -371,7 +425,7 @@ footer{
     }
     
     #bg{
-        height: 420px;
+        height: 360px;
       }
     .sidenav{
         display: block;
@@ -425,7 +479,7 @@ footer{
         color: #ffffff;background-color: #13182F;
       }
       #partners{
-        width: 100%;height: 150px;
+        width: 100%;height: 80px;
       }
 
 .container{
