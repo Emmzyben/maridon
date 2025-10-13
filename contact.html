@@ -90,34 +90,63 @@
 
   <div>
     <h2>Send us a message</h2>
-    <form id="form">
-      <div>
-        <label for="fullname">Full name</label><br>
-        <input type="text" id="fullname" name="fullname" placeholder="Full name" required>
-      </div>
+  <form id="form">
+  <div>
+    <label for="fullname">Full name</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Full name" required>
+  </div>
 
-      <div>
-        <label for="email">Email Address</label><br>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-      </div>
+  <div>
+    <label for="email">Email Address</label><br>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+  </div>
 
-      <div>
-        <label for="phone">Phone Number</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-      </div>
+  <div>
+    <label for="phone">Phone Number</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+  </div>
 
-      <div>
-        <label for="subject">Subject</label><br>
-        <input type="text" id="subject" name="subject" placeholder="Enter Subject">
-      </div>
+  <div>
+    <label for="subject">Subject</label><br>
+    <input type="text" id="subject" name="subject" placeholder="Enter Subject">
+  </div>
 
-      <div>
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-      </div>
+  <div>
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+  </div>
 
-      <button type="submit">Send Message</button>
-    </form>
+  <button type="submit">Send Message</button>
+</form>
+
+<script>
+  document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const whatsappNumber = "2347030393021";
+
+    // Collect form data
+    const fullname = document.getElementById('fullname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Construct message text
+    const whatsappMessage = `
+Full Name: ${fullname}
+Email: ${email}
+Phone: ${phone}
+Subject: ${subject}
+Message: ${message}
+    `;
+
+    // Encode and open WhatsApp chat
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+     window.location.href = url;
+  });
+</script>
+
   </div>
 </div>
 
